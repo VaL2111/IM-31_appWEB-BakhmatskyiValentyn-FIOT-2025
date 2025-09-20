@@ -315,11 +315,11 @@ button.normal {
   background-size: cover;
   background-position: center;
   padding: 30px;
-  width: 820px;
+  width: 735px;
 }
 
 #banners .banner3 {
-  width: 775px;
+  width: 670px;
   background-image: url(./img/banner3.jpg);
 }
 
@@ -370,11 +370,12 @@ button.white {
   background-size: cover;
   background-position: center;
   padding: 20px;
-  width: 800px;
+  width: 670px;
   margin-bottom: 20px;
 }
 
 #banner4 .banner5 {
+  width: 735px;
   background-image: url(./img/banner5.jpg);
 }
 
