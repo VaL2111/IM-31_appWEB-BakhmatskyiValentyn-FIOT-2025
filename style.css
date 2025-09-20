@@ -311,14 +311,15 @@ button.normal {
   justify-content: center;
   flex-direction: column;
   background-image: url(./img/banner2.jpg);
-  min-width: 800px;
   height: 50vh;
   background-size: cover;
   background-position: center;
   padding: 30px;
+  width: 820px;
 }
 
 #banners .banner3 {
+  width: 775px;
   background-image: url(./img/banner3.jpg);
 }
 
@@ -350,6 +351,43 @@ button.white {
 #banners .banner-box:hover button {
   background-color: #088178;
   border: 1px solid #088178;
+}
+
+#banner4 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 80px;
+}
+
+#banner4 .banner-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(./img/banner4.jpg);
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  width: 800px;
+  margin-bottom: 20px;
+}
+
+#banner4 .banner5 {
+  background-image: url(./img/banner5.jpg);
+}
+
+#banner4 h2 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+#banner4 h3 {
+  color: #d23731;
+  font-size: 15px;
+  font-weight: 800;
 }
 
 /*# sourceMappingURL=style.css.map */
