@@ -1,10 +1,171 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Магазин</title>
 </head>
 <body>
+    <section class="headings">
+        <h1>Заголовок 1-го рівня</h1>
+        <h2>Заголовок 2-го рівня</h2>
+        <h3>Заголовок 3-го рівня</h3>
+        <h4>Заголовок 4-го рівня</h4>
+        <h5>Заголовок 5-го рівня</h5>
+        <h6>Заголовок 6-го рівня</h6>
+    </section>
+
+    <section class="table">
+        <table>
+            <caption>Доступний товар</caption>
+            <thead>
+                <tr>
+                    <th scope="col">№</th>
+                    <th scope="col">Бренд</th>
+                    <th scope="col">Назва</th>
+                    <th scope="col">Відгуки</th>
+                    <th scope="col">Ціна|грн</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <th>adidas</th>
+                    <th>Сорочка “Cartoon Astronaut”</th>
+                    <th>5/5</th>
+                    <th>1980,02</th>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <th>adidas</th>
+                    <th>Сорочка Staff ed dark gray2</th>
+                    <th>5/5</th>
+                    <th>1980,02</th>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <th>adidas</th>
+                    <th>Сорочка Staff reb white</th>
+                    <th>5/5</th>
+                    <th>1980,02</th>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <th>adidas</th>
+                    <th>Футболка Essentials Elevated</th>
+                    <th>5/5</th>
+                    <th>1980,02</th>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <th>adidas</th>
+                    <th>Сорочка Staff al blue</th>
+                    <th>5/5</th>
+                    <th>1980,02</th>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <th>adidas</th>
+                    <th>Шорти Staff cargo sen light gray</th>
+                    <th>5/5</th>
+                    <th>2103,78</th>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <th>adidas</th>
+                    <th>Сорочка Staff ind beige</th>
+                    <th>5/5</th>
+                    <th>2062,53</th>
+                </tr>
+                <tr>
+                    <th scope="row">8</th>
+                    <th>adidas</th>
+                    <th>Сорочка Staff mai black oversize</th>
+                    <th>5/5</th>
+                    <th>1980,02</th>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="lists">
+        <h2>Списки</h2>
+        <ul>
+            <li>Сорочка “Cartoon Astronaut”</li>
+            <li>Сорочка Staff ed dark gray2</li>
+            <li>Сорочка Staff reb white</li>
+            <li>Футболка Essentials Elevated</li>
+        </ul>
+        <ol>
+            <li>Сорочка Staff al blue</li>
+            <li>Шорти Staff cargo sen light gray</li>
+            <li>Сорочка Staff ind beige</li>
+            <li>Сорочка Staff mai black oversize</li>
+        </ol>
+    </section>
+
+    <section class="form">
+        <h2>Форма</h2>
+
+        <form action="#" method="post" enctype="multipart/form-data" novalidate>
+            <div>
+                <label for="name">Ім'я</label>
+                <input id="name" name="name" type="text" placeholder="Ваше ім'я" required>
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="name@example.com" required>
+            </div>
+
+            <div>
+                <label for="service">Послуга</label>
+                <select id="service" name="service" required>
+                    <option value="">-- виберіть --</option>
+                    <option value="free_shipping">Безкоштовна доставка</option>
+                    <option value="online_ordering">Онлайн замовлення</option>
+                    <option value="save_money">Заощаджуйте гроші</option>
+                    <option value="special_offers">Акції</option>
+                    <option value="great_selection">Гарний вибір</option>
+                    <option value="support">Підтримка 24/7</option>
+                </select>
+            </div>
+
+            <div class="row">
+                <label for="message">Коментар</label>
+                <textarea id="message" placeholder="Ваше повідомлення..."></textarea>
+            </div>
+
+            <div class="row">
+                <label></label>
+                <button type="submit">Відправити</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="business">
+        <p>
+            Докладніше про предметну галузь та бізнес-логіку:
+            <a href="https://val2111.github.io/IM-31-appRECORD-BakhmatskyiValentyn-FIOT-2025/">
+                Перейти на сторінку
+            </a>
+        </p>
+    </section>
+
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #333;
+            padding: 8px 12px;
+            text-align: center;
+        }
+    </style>
 
 </body>
 </html>
