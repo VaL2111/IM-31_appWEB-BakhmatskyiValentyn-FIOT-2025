@@ -3,5 +3,8 @@ node_modules/
 
 style.scss
 style.css.map
+responsive_style.scss
+responsive_style.css.map
+
 package.json
 package-lock.json

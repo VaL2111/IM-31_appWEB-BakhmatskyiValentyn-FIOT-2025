@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive_style.css">
     <title>Йосип Store</title>
 </head>
 <body>
@@ -19,8 +20,15 @@
                 <li><a href="blog.html">Блог</a></li>
                 <li><a href="about.html">Про нас</a></li>
                 <li><a href="contact.html">Контакти</a></li>
-                <li><a href="cart.html"><img class="cart" src="./img/shopping-bag.png" alt="Кошик"></a></li>
+                <li><a href="cart.html"><img class="navbar-img cart" src="./img/shopping-bag.png" alt="Кошик"></a></li>
+                <a id="close" href="#"><img src="./img/cancel-cross.svg" alt="Закрити"></a>
             </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html">
+                <img class="navbar-img" src="./img/shopping-bag.png" alt="Кошик">
+            </a>
+            <img id="bar" class="navbar-img" src="./img/mobile_menu.svg" alt="Мобільне меню">
         </div>
     </header>
 
@@ -194,7 +202,7 @@
             </div>
         </section>
 
-        <section id="banner" class="section-m1">
+        <section id="banner1" class="section-m1">
             <h2>Знижки до <span>70%</span> на всі Футболки та Аксесуари</h2>
             <button class="normal">Дізнатися більше</button>
         </section>
@@ -334,7 +342,7 @@
             </div>
         </section>
 
-        <section id="banners" class="section-p1">
+        <section id="banners_2_and_3" class="section-p1">
             <div class="banner-box">
                 <h2>Найкращі класичні сукні</h2>
                 <span>Купи дві — третя безкоштовно</span>
@@ -347,7 +355,7 @@
             </div>
         </section>
 
-        <section id="banner4">
+        <section id="banner4" class="section-p1">
             <div class="banner-box">
                 <h2>Нова колекція взуття</h2>
                 <h3>Осінь/зима 2025</h3>
