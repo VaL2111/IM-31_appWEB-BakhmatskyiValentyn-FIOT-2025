@@ -307,30 +307,41 @@ button.normal {
   padding-bottom: 0;
 }
 
-#banners_2_and_3 .banner-box {
+.banners-container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.banner-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: flex-start;
   padding: 30px;
-  justify-content: center;
-  flex-direction: column;
-  background-image: url(./img/banner2.jpg);
   height: 50vh;
   background-size: cover;
   background-position: center;
-  width: 700px;
+  width: calc(50% - 10px);
+  min-width: 300px;
 }
 
-#banners_2_and_3 .banner3 {
+.banner2 {
+  background-image: url(./img/banner2.jpg);
+}
+
+.banner3 {
   background-image: url(./img/banner3.jpg);
 }
 
-#banners_2_and_3 h2 {
+.banner2 h2, .banner3 h2 {
   color: #fff;
   font-size: 28px;
   font-weight: 800;
 }
 
-#banners_2_and_3 span {
+.banner2 span, .banner3 span {
   color: #fff;
   font-size: 14px;
   font-weight: 500;
@@ -349,43 +360,26 @@ button.white {
   transition: 0.2s;
 }
 
-#banners_2_and_3 .banner-box:hover button {
+#banners-container .banner-box:hover button {
   background-color: #088178;
   border: 1px solid #088178;
 }
 
-#banner4 {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding-top: 25px;
-  padding-bottom: 0;
-}
-
-#banner4 .banner-box {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
+.banner4 {
   background-image: url(./img/banner4.jpg);
-  height: 50vh;
-  background-size: cover;
-  background-position: center;
-  padding: 30px;
-  width: 700px;
 }
 
-#banner4 .banner5 {
+.banner5 {
   background-image: url(./img/banner5.jpg);
 }
 
-#banner4 h2 {
+.banner4 h2, .banner5 h2 {
   color: #fff;
   font-size: 22px;
   font-weight: 900;
 }
 
-#banner4 h3 {
+.banner4 h3, .banner5 h3 {
   color: #d23731;
   font-size: 15px;
   font-weight: 800;
