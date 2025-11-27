@@ -1,10 +1,18 @@
 .idea/
 node_modules/
 
-style.scss
-style.css.map
-responsive_style.scss
-responsive_style.css.map
+styles/index_style.scss
+styles/index_style.css.map
+styles/responsive_style.scss
+styles/responsive_style.css.map
+styles/shop_style.scss
+styles/shop_style.css.map
+styles/single_product_style.scss
+styles/single_product_style.css.map
+styles/single_product_responsive_style.scss
+styles/single_product_responsive_style.css.map
+styles/modal_window.scss
+styles/modal_window.css.map
 
 package.json
 package-lock.json

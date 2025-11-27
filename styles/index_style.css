@@ -91,7 +91,7 @@ p {
 }
 
 #hero {
-  background-image: url("img/hero.jpg");
+  background-image: url("../img/hero.jpg");
   width: 100%;
   height: 90vh;
   background-size: cover;
@@ -108,7 +108,7 @@ p {
 }
 
 #hero button {
-  background-image: url("img/button.png");
+  background-image: url("../img/button.png");
   background-color: transparent;
   color: #088178;
   border: 0;
@@ -264,7 +264,7 @@ h6 {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  background-image: url(./img/banner1.jpg);
+  background-image: url(../img/banners/banner1.jpg);
   width: 100%;
   height: 40vh;
   background-size: cover;
@@ -328,11 +328,11 @@ button.normal {
 }
 
 .banner2 {
-  background-image: url(./img/banner2.jpg);
+  background-image: url(../img/banners/banner2.jpg);
 }
 
 .banner3 {
-  background-image: url(./img/banner3.jpg);
+  background-image: url(../img/banners/banner3.jpg);
 }
 
 .banner2 h2, .banner3 h2 {
@@ -366,11 +366,11 @@ button.white {
 }
 
 .banner4 {
-  background-image: url(./img/banner4.jpg);
+  background-image: url(../img/banners/banner4.jpg);
 }
 
 .banner5 {
-  background-image: url(./img/banner5.jpg);
+  background-image: url(../img/banners/banner5.jpg);
 }
 
 .banner4 h2, .banner5 h2 {
@@ -437,4 +437,4 @@ footer .copyright {
   text-align: center;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=index_style.css.map */

@@ -5,167 +5,524 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Магазин</title>
+    <link rel="stylesheet" href="styles/shop_style.css">
+    <link rel="stylesheet" href="styles/index_style.css">
+    <link rel="stylesheet" href="styles/responsive_style.css">
+    <link rel="stylesheet" href="styles/modal_window.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Йосип Store</title>
 </head>
 <body>
-    <section class="headings">
-        <h1>Заголовок 1-го рівня</h1>
-        <h2>Заголовок 2-го рівня</h2>
-        <h3>Заголовок 3-го рівня</h3>
-        <h4>Заголовок 4-го рівня</h4>
-        <h5>Заголовок 5-го рівня</h5>
-        <h6>Заголовок 6-го рівня</h6>
-    </section>
+    <header>
+        <a class="logo" href="#">Йосип</a>
 
-    <section class="table">
-        <table>
-            <caption>Доступний товар</caption>
-            <thead>
-                <tr>
-                    <th scope="col">№</th>
-                    <th scope="col">Бренд</th>
-                    <th scope="col">Назва</th>
-                    <th scope="col">Відгуки</th>
-                    <th scope="col">Ціна|грн</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <th>adidas</th>
-                    <th>Сорочка “Cartoon Astronaut”</th>
-                    <th>5/5</th>
-                    <th>1980,02</th>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <th>adidas</th>
-                    <th>Сорочка Staff ed dark gray2</th>
-                    <th>5/5</th>
-                    <th>1980,02</th>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <th>adidas</th>
-                    <th>Сорочка Staff reb white</th>
-                    <th>5/5</th>
-                    <th>1980,02</th>
-                </tr>
-                <tr>
-                    <th scope="row">4</th>
-                    <th>adidas</th>
-                    <th>Футболка Essentials Elevated</th>
-                    <th>5/5</th>
-                    <th>1980,02</th>
-                </tr>
-                <tr>
-                    <th scope="row">5</th>
-                    <th>adidas</th>
-                    <th>Сорочка Staff al blue</th>
-                    <th>5/5</th>
-                    <th>1980,02</th>
-                </tr>
-                <tr>
-                    <th scope="row">6</th>
-                    <th>adidas</th>
-                    <th>Шорти Staff cargo sen light gray</th>
-                    <th>5/5</th>
-                    <th>2103,78</th>
-                </tr>
-                <tr>
-                    <th scope="row">7</th>
-                    <th>adidas</th>
-                    <th>Сорочка Staff ind beige</th>
-                    <th>5/5</th>
-                    <th>2062,53</th>
-                </tr>
-                <tr>
-                    <th scope="row">8</th>
-                    <th>adidas</th>
-                    <th>Сорочка Staff mai black oversize</th>
-                    <th>5/5</th>
-                    <th>1980,02</th>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
-    <section class="lists">
-        <h2>Списки</h2>
-        <ul>
-            <li>Сорочка “Cartoon Astronaut”</li>
-            <li>Сорочка Staff ed dark gray2</li>
-            <li>Сорочка Staff reb white</li>
-            <li>Футболка Essentials Elevated</li>
-        </ul>
-        <ol>
-            <li>Сорочка Staff al blue</li>
-            <li>Шорти Staff cargo sen light gray</li>
-            <li>Сорочка Staff ind beige</li>
-            <li>Сорочка Staff mai black oversize</li>
-        </ol>
-    </section>
-
-    <section class="form">
-        <h2>Форма</h2>
-
-        <form action="#" method="post" enctype="multipart/form-data" novalidate>
-            <div>
-                <label for="name">Ім'я</label>
-                <input id="name" name="name" type="text" placeholder="Ваше ім'я" required>
-            </div>
-
-            <div>
-                <label for="email">Email</label>
-                <input id="email" name="email" type="email" placeholder="name@example.com" required>
-            </div>
-
-            <div>
-                <label for="service">Послуга</label>
-                <select id="service" name="service" required>
-                    <option value="">-- виберіть --</option>
-                    <option value="free_shipping">Безкоштовна доставка</option>
-                    <option value="online_ordering">Онлайн замовлення</option>
-                    <option value="save_money">Заощаджуйте гроші</option>
-                    <option value="special_offers">Акції</option>
-                    <option value="great_selection">Гарний вибір</option>
-                    <option value="support">Підтримка 24/7</option>
-                </select>
-            </div>
-
-            <div class="row">
-                <label for="message">Коментар</label>
-                <textarea id="message" placeholder="Ваше повідомлення..."></textarea>
-            </div>
-
-            <div class="row">
-                <label></label>
-                <button type="submit">Відправити</button>
-            </div>
-        </form>
-    </section>
-
-    <section class="business">
-        <p>
-            Докладніше про предметну галузь та бізнес-логіку:
-            <a href="https://val2111.github.io/IM-31-appRECORD-BakhmatskyiValentyn-FIOT-2025/">
-                Перейти на сторінку
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Дім</a></li>
+                <li><a class="active" href="shop.html">Магазин</a></li>
+                <li><a href="blog.html">Блог</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+                <li><a href="cart.html"><img class="navbar-img cart" src="./img/shopping-bag.png" alt="Кошик"></a></li>
+                <button id="close" type="button">
+                    <img src="./img/cancel-cross.svg" alt="Закрити">
+                </button>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html">
+                <img class="navbar-img" src="./img/shopping-bag.png" alt="Кошик">
             </a>
-        </p>
-    </section>
+            <img id="bar" class="navbar-img" src="./img/mobile_menu.svg" alt="Мобільне меню">
+        </div>
+    </header>
 
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
+    <main>
+        <section id="page-header">
+            <h2>#stayhome</h2>
+            <p>Заощадьте більше з купонами та знижками до 70%</p>
+        </section>
 
-        th, td {
-            border: 1px solid #333;
-            padding: 8px 12px;
-            text-align: center;
-        }
-    </style>
+        <section class="products section-p1">
+            <div class="pro-container">
+                <div class="pro"
+                     data-id="1"
+                     data-image="./img/products/f1.jpg"
+                     data-brand="adidas"
+                     data-title="Футболка Cartoon Astronaut"
+                     data-price="1980,02 грн"
+                     data-desc="Яскрава літня сорочка з абстрактним різнокольоровим принтом
+                     у жовто-бірюзових тонах. Вільний крій та невагома тканина дарують відчуття прохолоди.
+                     Створена, щоб виділятися з натовпу на пляжних вечірках.">
+                    <img class="product-img" src="./img/products/f1.jpg" alt="Футболка “Cartoon Astronaut”">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Футболка “Cartoon Astronaut”</h5>
+                        <div class="stars">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                        </div>
+                        <h4>1980,02 грн</h4>
+                    </div>
+                    <a href="#"><img src="./img/shopping_cart.png" alt="Додати в кошик" class="shopping-cart-img"></a>
+                </div>
+                <div class="pro"
+                     data-id="2"
+                     data-image="./img/products/f2.jpg"
+                     data-brand="adidas"
+                     data-title="Футболка Cartoon Astronaut"
+                     data-price="1980,02 грн"
+                     data-desc="Світла сорочка з ніжним принтом тропічних квітів та листя.
+                     Вона додасть вашому образу свіжості та екзотичного настрою.
+                     Незамінна річ для довгоочікуваної відпустки біля моря.">
+                    <img class="product-img" src="./img/products/f2.jpg" alt="Футболка “Cartoon Astronaut”">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Футболка “Cartoon Astronaut”</h5>
+                        <div class="stars">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                        </div>
+                        <h4>1980,02 грн</h4>
+                    </div>
+                    <a href="#"><img src="./img/shopping_cart.png" alt="Додати в кошик" class="shopping-cart-img"></a>
+                </div>
+                <div class="pro"
+                     data-id="3"
+                     data-image="./img/products/f3.jpg"
+                     data-brand="adidas"
+                     data-title="Футболка Cartoon Astronaut"
+                     data-price="1980,02 грн"
+                     data-desc="Стильна сорочка з насиченим квітковим візерунком у вінтажному стилі.
+                     Її можна носити як самостійно, так і поверх білої футболки для розслабленого луку.
+                     Додає романтичних ноток у чоловічий гардероб.">
+                    <img class="product-img" src="./img/products/f3.jpg" alt="Футболка “Cartoon Astronaut”">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Футболка “Cartoon Astronaut”</h5>
+                        <div class="stars">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                        </div>
+                        <h4>1980,02 грн</h4>
+                    </div>
+                    <a href="#"><img src="./img/shopping_cart.png" alt="Додати в кошик" class="shopping-cart-img"></a>
+                </div>
+                <div class="pro"
+                     data-id="4"
+                     data-image="./img/products/f4.jpg"
+                     data-brand="adidas"
+                     data-title="Футболка Cartoon Astronaut"
+                     data-price="1980,02 грн"
+                     data-desc="Біла сорочка з коротким рукавом та делікатним принтом гілочок сакури.
+                     Виглядає свіжо та елегантно, чудово пасуючи до світлих літніх штанів.
+                     Легкий матеріал ідеальний для спекотної погоди.">
+                    <img class="product-img" src="./img/products/f4.jpg" alt="Футболка “Cartoon Astronaut”">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Футболка “Cartoon Astronaut”</h5>
+                        <div class="stars">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                        </div>
+                        <h4>1980,02 грн</h4>
+                    </div>
+                    <a href="#"><img src="./img/shopping_cart.png" alt="Додати в кошик" class="shopping-cart-img"></a>
+                </div>
+                <div class="pro"
+                     data-id="5"
+                     data-image="./img/products/f5.jpg"
+                     data-brand="adidas"
+                     data-title="Футболка Cartoon Astronaut"
+                     data-price="1980,02 грн"
+                     data-desc="Темно-синя сорочка з контрастним рожевим квітковим принтом.
+                     Вона створює виразний та впевнений образ для вечірніх прогулянок.
+                     Якісна фурнітура та пошиття гарантують довговічність виробу.">
+                    <img class="product-img" src="./img/products/f5.jpg" alt="Футболка “Cartoon Astronaut”">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Футболка “Cartoon Astronaut”</h5>
+                        <div class="stars">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                        </div>
+                        <h4>1980,02 грн</h4>
+                    </div>
+                    <a href="#"><img src="./img/shopping_cart.png" alt="Додати в кошик" class="shopping-cart-img"></a>
+                </div>
+                <div class="pro"
+                     data-id="6"
+                     data-image="./img/products/f6.jpg"
+                     data-brand="adidas"
+                     data-title="Футболка Cartoon Astronaut"
+                     data-price="1980,02 грн"
+                     data-desc="Модна сорочка в стилі колор-блок з поєднанням теракотового та синього вельвету.
+                     Виглядає як багатошаровий одяг завдяки імітації білої футболки знизу.
+                     Сучасний вибір для тих, хто слідкує за трендами.">
+                    <img class="product-img" src="./img/products/f6.jpg" alt="Футболка “Cartoon Astronaut”">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Футболка “Cartoon Astronaut”</h5>
+                        <div class="stars">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                        </div>
+                        <h4>2062,53 грн</h4>
+                    </div>
+                    <a href="#"><img src="./img/shopping_cart.png" alt="Додати в кошик" class="shopping-cart-img"></a>
+                </div>
+                <div class="pro"
+                     data-id="7"
+                     data-image="./img/products/f7.jpg"
+                     data-brand="adidas"
+                     data-title="Штани штапель EY-273A300"
+                     data-price="2103,78 грн"
+                     data-desc="Легкі лляні штани вільного крою, прикрашені витонченою вишивкою польових квітів знизу.
+                     Еластичний пояс забезпечує ідеальну посадку та комфорт протягом дня.
+                     Чудовий варіант для невимушеного літнього образу.">
+                    <img class="product-img" src="./img/products/f7.jpg" alt="Штани штапель EY-273A300">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Штани штапель EY-273A300</h5>
+                        <div class="stars">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                        </div>
+                        <h4>2103,78 грн</h4>
+                    </div>
+                    <a href="#"><img src="./img/shopping_cart.png" alt="Додати в кошик" class="shopping-cart-img"></a>
+                </div>
+                <div class="pro"
+                     data-id="8"
+                     data-image="./img/products/f8.jpg"
+                     data-brand="adidas"
+                     data-title="Сорочка жіноча з принтами"
+                     data-price="1567,52 грн"
+                     data-desc="Оригінальна блуза вільного крою з кумедним графічним принтом котиків.
+                     Широкі рукави та приємна на дотик тканина роблять її дуже затишною.
+                     Ця річ гарантовано підніме настрій вам та оточуючим.">
+                    <img class="product-img" src="./img/products/f8.jpg" alt="Сорочка жіноча з принтами ">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Сорочка жіноча з принтами </h5>
+                        <div class="stars">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                        </div>
+                        <h4>1567,52 грн</h4>
+                    </div>
+                    <a href="#"><img src="./img/shopping_cart.png" alt="Додати в кошик" class="shopping-cart-img"></a>
+                </div>
+                <div class="pro"
+                     data-id="9"
+                     data-image="./img/products/n1.jpg"
+                     data-brand="adidas"
+                     data-title="Сорочка “Cartoon Astronaut”"
+                     data-price="1980,02 грн"
+                     data-desc="Ніжно-блакитна сорочка з коміром-стійкою, виконана з приємної текстурної тканини.
+                     Вона виглядає охайно та сучасно, підходячи як для офісу, так і для побачень.
+                     Натуральний матеріал дозволяє тілу дихати.">
+                    <img class="product-img" src="./img/products/n1.jpg" alt="Сорочка  “Cartoon Astronaut”">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Сорочка  “Cartoon Astronaut”</h5>
+                        <div class="stars">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                        </div>
+                        <h4>1980,02 грн</h4>
+                    </div>
+                    <a href="#"><img src="./img/shopping_cart.png" alt="Додати в кошик" class="shopping-cart-img"></a>
+                </div>
+                <div class="pro"
+                     data-id="10"
+                     data-image="./img/products/n2.jpg"
+                     data-brand="adidas"
+                     data-title="Сорочка Staff ed dark gray2"
+                     data-price="1980,02 грн"
+                     data-desc="Темно-сіра лляна сорочка класичного крою з довгим рукавом.
+                     Це базова річ, яка має бути в гардеробі кожного чоловіка для створення елегантних образів.
+                     Відмінно пасує до джинсів або класичних брюк.">
+                    <img class="product-img" src="./img/products/n2.jpg" alt="Сорочка Staff ed dark gray2">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Сорочка Staff ed dark gray2</h5>
+                        <div class="stars">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                        </div>
+                        <h4>1980,02 грн</h4>
+                    </div>
+                    <a href="#"><img src="./img/shopping_cart.png" alt="Додати в кошик" class="shopping-cart-img"></a>
+                </div>
+                <div class="pro"
+                     data-id="11"
+                     data-image="./img/products/n3.jpg"
+                     data-brand="adidas"
+                     data-title="Сорочка Staff reb white"
+                     data-price="1980,02 грн"
+                     data-desc="Білосніжна сорочка з коміром-стійкою для вишуканого та легкого образу.
+                     Вона додає елегантності, залишаючись при цьому дуже зручною та невимушеною.
+                     Ідеальна для урочистих подій у теплу пору року.">
+                    <img class="product-img" src="./img/products/n3.jpg" alt="Сорочка Staff reb white”">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Сорочка Staff reb white</h5>
+                        <div class="stars">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                        </div>
+                        <h4>1980,02 грн</h4>
+                    </div>
+                    <a href="#"><img src="./img/shopping_cart.png" alt="Додати в кошик" class="shopping-cart-img"></a>
+                </div>
+                <div class="pro"
+                     data-id="12"
+                     data-image="./img/products/n4.jpg"
+                     data-brand="adidas"
+                     data-title="Футболка Essentials Elevated"
+                     data-price="1980,02 грн"
+                     data-desc="Стильна сорочка з коротким рукавом кольору хакі та оригінальним графічним принтом.
+                     Виготовлена з якісної бавовни, вона чудово підходить для створення сучасного вуличного образу.
+                     Ідеально поєднується з джинсами або шортами карго.">
+                    <img class="product-img" src="./img/products/n4.jpg" alt="Футболка Essentials Elevated">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Футболка Essentials Elevated</h5>
+                        <div class="stars">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                        </div>
+                        <h4>1980,02 грн</h4>
+                    </div>
+                    <a href="#"><img src="./img/shopping_cart.png" alt="Додати в кошик" class="shopping-cart-img"></a>
+                </div>
+                <div class="pro"
+                     data-id="13"
+                     data-image="./img/products/n5.jpg"
+                     data-brand="adidas"
+                     data-title="Сорочка Staff al blue"
+                     data-price="1980,02 грн"
+                     data-desc="Класична блакитна сорочка з деніму, яка ніколи не виходить з моди.
+                     Має зручний прямий крій та нагрудну кишеню для дрібниць.
+                     Універсальний вибір як для роботи в офісі, так і для прогулянок містом.">
+                    <img class="product-img" src="./img/products/n5.jpg" alt="Сорочка Staff al blue">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Сорочка Staff al blue</h5>
+                        <div class="stars">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                        </div>
+                        <h4>1980,02 грн</h4>
+                    </div>
+                    <a href="#"><img src="./img/shopping_cart.png" alt="Додати в кошик" class="shopping-cart-img"></a>
+                </div>
+                <div class="pro"
+                     data-id="14"
+                     data-image="./img/products/n6.jpg"
+                     data-brand="adidas"
+                     data-title="Шорти Staff cargo sen light gray"
+                     data-price="1980,02 грн"
+                     data-desc="Легкі світлі шорти у тонку смужку, доповнені стильним плетеним ременем.
+                     Натуральна тканина дозволяє шкірі дихати навіть у найспекотніші літні дні.
+                     Забезпечують комфорт та свободу рухів під час відпочинку.">
+                    <img class="product-img" src="./img/products/n6.jpg" alt="Шорти Staff cargo sen light gray">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Шорти Staff cargo sen light gray</h5>
+                        <div class="stars">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                        </div>
+                        <h4>2103,78 грн</h4>
+                    </div>
+                    <a href="#"><img src="./img/shopping_cart.png" alt="Додати в кошик" class="shopping-cart-img"></a>
+                </div>
+                <div class="pro"
+                     data-id="15"
+                     data-image="./img/products/n7.jpg"
+                     data-brand="adidas"
+                     data-title="Сорочка Staff ind beige"
+                     data-price="1980,02 грн"
+                     data-desc="Бежева сорочка-джакет із щільної тканини з двома функціональними кишенями на грудях.
+                     Універсальний колір дозволяє легко комбінувати її з будь-яким низом.
+                     Практичний та стильний елемент гардеробу в стилі мілітарі або кежуал.">
+                    <img class="product-img" src="./img/products/n7.jpg" alt="Сорочка Staff ind beige">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Сорочка Staff ind beige</h5>
+                        <div class="stars">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                        </div>
+                        <h4>2062,53 грн</h4>
+                    </div>
+                    <a href="#"><img src="./img/shopping_cart.png" alt="Додати в кошик" class="shopping-cart-img"></a>
+                </div>
+                <div class="pro"
+                     data-id="16"
+                     data-image="./img/products/n8.jpg"
+                     data-brand="adidas"
+                     data-title="Сорочка Staff mai black oversize"
+                     data-price="1980,02 грн"
+                     data-desc="Чорна сорочка оверсайз крою з лаконічним коміром-стійкою.
+                     Мінімалістичний дизайн підкреслює стриманий та сучасний стиль власника.
+                     Забезпечує максимальну свободу рухів та комфорт у носінні.">
+                    <img class="product-img" src="./img/products/n8.jpg" alt="Сорочка Staff mai black oversize">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Сорочка Staff mai black oversize</h5>
+                        <div class="stars">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                            <img src="./img/star.png" alt="Зірка" class="star-img">
+                        </div>
+                        <h4>1980,02 грн</h4>
+                    </div>
+                    <a href="#"><img src="./img/shopping_cart.png" alt="Додати в кошик" class="shopping-cart-img"></a>
+                </div>
+            </div>
+        </section>
 
+        <div id="productModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+
+                <div class="modal-top-wrapper">
+                    <div class="modal-left">
+                        <img id="m-image" src="" alt="Product Image">
+                    </div>
+
+                    <div class="modal-right">
+                        <span id="m-brand">Brand</span>
+                        <h4 id="m-title">Назва товару</h4>
+                        <h2 id="m-price">0 грн</h2>
+
+                        <label>
+                            <select>
+                                <option>Виберіть розмір</option>
+                                <option>XL</option>
+                                <option>XXL</option>
+                                <option>Small</option>
+                                <option>Large</option>
+                            </select>
+                        </label>
+
+                        <div class="buy-actions">
+                            <label>
+                                <input type="number" value="1">
+                            </label>
+                            <button class="normal">Додати в кошик</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-bottom-wrapper">
+                    <h4>Опис товару</h4>
+                    <p id="m-desc">Опис...</p>
+                </div>
+            </div>
+        </div>
+
+        <section id="pagination" class="section-p1">
+            <a href="">1</a>
+            <a href="">2</a>
+            <a href="">
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </section>
+    </main>
+
+    <footer class="section-p1">
+        <div class="column">
+            <a class="logo" href="#">Йосип</a>
+            <h4>Контакти</h4>
+            <p><strong>Адреса:</strong> м. Київ, вул. Політехнічна, 41</p>
+            <p><strong>Номер телефону:</strong> 044 236 7989</p>
+            <p><strong>Години роботи:</strong> 8:00 - 17:00. Пн — Пт</p>
+        </div>
+
+        <div class="column">
+            <h4>Про нас</h4>
+            <a href="#">Інформація про доставку</a>
+            <a href="#">Політика конфіденційності</a>
+            <a href="#">Правила та умови</a>
+            <a href="#">Зв'язатися з нами</a>
+        </div>
+
+        <div class="column">
+            <h4>Мій обліковий запис</h4>
+            <a href="#">Увійти</a>
+            <a href="#">Переглянути кошик</a>
+            <a href="#">Відстежити моє замовлення</a>
+            <a href="#">Довідка</a>
+        </div>
+
+        <div class="column install">
+            <h4>Встановити застосунок</h4>
+            <p>З App Store або Google Play</p>
+            <div class="row">
+                <img src="./img/app_store.jpg" alt="">
+                <img src="./img/google_pay.jpg" alt="">
+            </div>
+            <p>Захищені платежі</p>
+            <img src="./img/pay.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>© 2025 Йосип Store. Всі права захищено.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/index.js"></script>
+    <script src="scripts/modal_window.js"></script>
 </body>
 </html>
