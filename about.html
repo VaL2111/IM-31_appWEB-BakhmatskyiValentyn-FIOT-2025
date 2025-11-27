@@ -1,10 +1,136 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/index_style.css">
+    <link rel="stylesheet" href="styles/index_responsive_style.css">
+    <link rel="stylesheet" href="styles/shop_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/about_style.css">
+    <title>Йосип Store</title>
 </head>
 <body>
+    <header>
+        <a class="logo" href="#">Йосип</a>
 
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Дім</a></li>
+                <li><a href="shop.html">Магазин</a></li>
+                <li><a href="blog.html">Блог</a></li>
+                <li><a class="active" href="about.html">Про нас</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+                <li><a href="cart.html"><img class="navbar-img cart" src="./img/shopping-bag.png" alt="Кошик"></a></li>
+                <button id="close" type="button">
+                    <img src="./img/cancel-cross.svg" alt="Закрити">
+                </button>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html">
+                <img class="navbar-img" src="./img/shopping-bag.png" alt="Кошик">
+            </a>
+            <img id="bar" class="navbar-img" src="./img/mobile_menu.svg" alt="Мобільне меню">
+        </div>
+    </header>
+
+    <main>
+        <section id="page-header" class="about-header">
+            <h2>#KnowUs</h2>
+            <p>Стиль без зайвих зусиль</p>
+        </section>
+
+        <section id="about-head" class="section-p1">
+            <img src="img/about/about_us.jpg" alt="">
+            <div>
+                <h2>Хто ми?</h2>
+                <p>
+                    Йосип Store — це простір, де естетика зустрічається з комфортом.
+                    Ми відмовляємося від швидкоплинної моди на користь речей,
+                    які залишаються актуальними роками.
+                    Наші колекції базуються на натуральних матеріалах,
+                    лаконічних силуетах та палітрі, натхненній природою.
+                    Кожен шов, кожен ґдзик та кожна лінія створені для того,
+                    щоб підкреслити вашу природну красу, не перевантажуючи образ.
+                </p>
+                <abbr title="">
+                    Ми створюємо одяг, який підкреслює вашу індивідуальність, не затьмарюючи її.
+                </abbr>
+            </div>
+        </section>
+
+        <section id="features" class="section-p1">
+            <div class="fe-box">
+                <img src="./img/features/f1.png" alt="Безкоштовна доставка">
+                <h6>Безкоштовна доставка</h6>
+            </div>
+            <div class="fe-box">
+                <img src="./img/features/f2.png" alt="Онлайн замовлення">
+                <h6>Онлайн замовлення</h6>
+            </div>
+            <div class="fe-box">
+                <img src="./img/features/f3.png" alt="Заощаджуйте гроші">
+                <h6>Заощаджуйте гроші</h6>
+            </div>
+            <div class="fe-box">
+                <img src="./img/features/f4.png" alt="Акції">
+                <h6>Акції</h6>
+            </div>
+            <div class="fe-box">
+                <img src="./img/features/f5.png" alt="Гарний вибір">
+                <h6>Гарний вибір</h6>
+            </div>
+            <div class="fe-box">
+                <img src="./img/features/f6.png" alt="Підтримка 24/7">
+                <h6>Підтримка 24/7</h6>
+            </div>
+        </section>
+    </main>
+
+    <footer class="section-p1">
+        <div class="column">
+            <a class="logo" href="#">Йосип</a>
+            <h4>Контакти</h4>
+            <p><strong>Адреса:</strong> м. Київ, вул. Політехнічна, 41</p>
+            <p><strong>Номер телефону:</strong> 044 236 7989</p>
+            <p><strong>Години роботи:</strong> 8:00 - 17:00. Пн — Пт</p>
+        </div>
+
+        <div class="column">
+            <h4>Про нас</h4>
+            <a href="#">Інформація про доставку</a>
+            <a href="#">Політика конфіденційності</a>
+            <a href="#">Правила та умови</a>
+            <a href="#">Зв'язатися з нами</a>
+        </div>
+
+        <div class="column">
+            <h4>Мій обліковий запис</h4>
+            <a href="#">Увійти</a>
+            <a href="#">Переглянути кошик</a>
+            <a href="#">Відстежити моє замовлення</a>
+            <a href="#">Довідка</a>
+        </div>
+
+        <div class="column install">
+            <h4>Встановити застосунок</h4>
+            <p>З App Store або Google Play</p>
+            <div class="row">
+                <img src="./img/app_store.jpg" alt="">
+                <img src="./img/google_pay.jpg" alt="">
+            </div>
+            <p>Захищені платежі</p>
+            <img src="./img/pay.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>© 2025 Йосип Store. Всі права захищено.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/index.js"></script>
 </body>
 </html>

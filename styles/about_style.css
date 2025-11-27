@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+#page-header.about-header {
+  background-image: url("../img/about/about_banner.png");
+}
+
+#about-head {
+  display: flex;
+  align-items: center;
+}
+
+#about-head img {
+  width: 600px;
+  height: auto;
+  border-radius: 4px;
+}
+
+#about-head div {
+  padding-left: 40px;
+}
+
+@media (min-width: 478px) and (max-width: 900px) {
+  #about-head img {
+    width: 390px;
+  }
+}
+@media (max-width: 477px) {
+  #about-head {
+    flex-direction: column;
+  }
+  #about-head img {
+    width: 300px;
+    margin-bottom: 10px;
+  }
+  #about-head div {
+    padding-left: 0;
+  }
+}
+
+/*# sourceMappingURL=about_style.css.map */

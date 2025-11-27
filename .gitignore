@@ -3,8 +3,8 @@ node_modules/
 
 styles/index_style.scss
 styles/index_style.css.map
-styles/responsive_style.scss
-styles/responsive_style.css.map
+styles/index_responsive_style.scss
+styles/index_responsive_style.css.map
 styles/shop_style.scss
 styles/shop_style.css.map
 styles/single_product_style.scss
@@ -13,6 +13,12 @@ styles/single_product_responsive_style.scss
 styles/single_product_responsive_style.css.map
 styles/modal_window.scss
 styles/modal_window.css.map
+styles/blog_style.scss
+styles/blog_style.css.map
+styles/about_style.scss
+styles/about_style.css.map
+styles/contact_style.scss
+styles/contact_style.css.map
 
 package.json
 package-lock.json
