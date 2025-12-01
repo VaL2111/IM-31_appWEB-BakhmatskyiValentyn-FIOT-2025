@@ -19,6 +19,8 @@ styles/about_style.scss
 styles/about_style.css.map
 styles/contact_style.scss
 styles/contact_style.css.map
+styles/cart_style.scss
+styles/cart_style.css.map
 
 package.json
 package-lock.json

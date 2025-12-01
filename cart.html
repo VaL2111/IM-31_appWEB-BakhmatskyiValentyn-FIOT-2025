@@ -1,10 +1,178 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/index_style.css">
+    <link rel="stylesheet" href="styles/index_responsive_style.css">
+    <link rel="stylesheet" href="styles/shop_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/cart_style.css">
+    <title>Йосип Store</title>
 </head>
 <body>
+    <header>
+        <a class="logo" href="#">Йосип</a>
 
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Дім</a></li>
+                <li><a href="shop.html">Магазин</a></li>
+                <li><a href="blog.html">Блог</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+                <li>
+                    <a class="active cart" href="cart.html">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </a>
+                </li>
+                <button id="close" type="button">
+                    <img src="./img/cancel-cross.svg" alt="Закрити">
+                </button>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html">
+                <i class="fa-solid fa-bag-shopping active"></i>
+            </a>
+            <img id="bar" class="menu-img" src="./img/mobile_menu.svg" alt="Мобільне меню">
+        </div>
+    </header>
+
+    <main>
+        <section id="page-header" class="cart-header">
+            <h2>#cart</h2>
+            <p>Введіть код купона та заощаджуйте до 70%</p>
+        </section>
+
+        <section id="cart" class="section-p1">
+            <table>
+                <thead>
+                    <tr>
+                        <td>Видалити</td>
+                        <td>Фото</td>
+                        <td>Товар</td>
+                        <td>Ціна</td>
+                        <td>Кількість</td>
+                        <td>Загальна ціна</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href=""><i class="far fa-times-circle"></i></a></td>
+                        <td><img src="img/products/f1.jpg" alt=""></td>
+                        <td>Футболка “Cartoon Astronaut”</td>
+                        <td>1980,02 грн</td>
+                        <td>
+                            <label>
+                                <input type="number" value="1">
+                            </label>
+                        </td>
+                        <td>1980,02 грн</td>
+                    </tr>
+                    <tr>
+                        <td><a href=""><i class="far fa-times-circle"></i></a></td>
+                        <td><img src="img/products/f2.jpg" alt=""></td>
+                        <td>Футболка “Cartoon Astronaut”</td>
+                        <td>1980,02 грн</td>
+                        <td>
+                            <label>
+                                <input type="number" value="1">
+                            </label>
+                        </td>
+                        <td>1980,02 грн</td>
+                    </tr>
+                    <tr>
+                        <td><a href=""><i class="far fa-times-circle"></i></a></td>
+                        <td><img src="img/products/f3.jpg" alt=""></td>
+                        <td>Футболка “Cartoon Astronaut”</td>
+                        <td>1980,02 грн</td>
+                        <td>
+                            <label>
+                                <input type="number" value="1">
+                            </label>
+                        </td>
+                        <td>1980,02 грн</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="cart-add" class="section-p1">
+            <div id="coupon">
+                <h3>Введіть купон</h3>
+                <div class="input-and-apply-coupon">
+                    <label>
+                        <input type="text" placeholder="Введіть свій купон">
+                    </label>
+                    <button class="normal">Застосувати</button>
+                </div>
+            </div>
+
+            <div id="subtotal">
+                <h3>Загальна ціна кошика</h3>
+                <table>
+                    <tr>
+                        <td>Загальна ціна за товар</td>
+                        <td>5940.06 грн</td>
+                    </tr>
+                    <tr>
+                        <td>Доставка</td>
+                        <td>Безкоштовно</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Сума до сплати</strong></td>
+                        <td><strong>5940.06 грн</strong></td>
+                    </tr>
+                </table>
+                <button class="normal">Купити</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="section-p1">
+        <div class="column">
+            <a class="logo" href="#">Йосип</a>
+            <h4>Контакти</h4>
+            <p><strong>Адреса:</strong> м. Київ, вул. Політехнічна, 41</p>
+            <p><strong>Номер телефону:</strong> 044 236 7989</p>
+            <p><strong>Години роботи:</strong> 8:00 - 17:00. Пн — Пт</p>
+        </div>
+
+        <div class="column">
+            <h4>Про нас</h4>
+            <a href="#">Інформація про доставку</a>
+            <a href="#">Політика конфіденційності</a>
+            <a href="#">Правила та умови</a>
+            <a href="#">Зв'язатися з нами</a>
+        </div>
+
+        <div class="column">
+            <h4>Мій обліковий запис</h4>
+            <a href="#">Увійти</a>
+            <a href="#">Переглянути кошик</a>
+            <a href="#">Відстежити моє замовлення</a>
+            <a href="#">Довідка</a>
+        </div>
+
+        <div class="column install">
+            <h4>Встановити застосунок</h4>
+            <p>З App Store або Google Play</p>
+            <div class="row">
+                <img src="./img/app_store.jpg" alt="">
+                <img src="./img/google_pay.jpg" alt="">
+            </div>
+            <p>Захищені платежі</p>
+            <img src="./img/pay.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>© 2025 Йосип Store. Всі права захищено.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/index.js"></script>
 </body>
 </html>

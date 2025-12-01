@@ -11,7 +11,7 @@
 #close {
   display: none;
   border: none;
-  height: 37px;
+  height: 33px;
 }
 
 @media (max-width: 900px) {

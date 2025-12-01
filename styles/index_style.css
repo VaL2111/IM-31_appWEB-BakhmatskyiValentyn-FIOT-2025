@@ -67,9 +67,22 @@ header {
   bottom: -4px;
 }
 
-.navbar-img {
-  width: 35px;
-  height: 35px;
+#navbar li a i {
+  font-size: 26px;
+}
+
+#mobile a i {
+  font-size: 30px;
+  color: #1a1a1a;
+}
+
+#mobile .menu-img {
+  width: 37px;
+  height: 37px;
+}
+
+#mobile .active {
+  color: #088178;
 }
 
 h1 {
