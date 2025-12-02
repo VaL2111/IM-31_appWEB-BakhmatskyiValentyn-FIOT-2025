@@ -59,44 +59,7 @@
                         <td>Загальна ціна</td>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td><a href=""><i class="far fa-times-circle"></i></a></td>
-                        <td><img src="img/products/f1.jpg" alt=""></td>
-                        <td>Футболка “Cartoon Astronaut”</td>
-                        <td>1980,02 грн</td>
-                        <td>
-                            <label>
-                                <input type="number" value="1">
-                            </label>
-                        </td>
-                        <td>1980,02 грн</td>
-                    </tr>
-                    <tr>
-                        <td><a href=""><i class="far fa-times-circle"></i></a></td>
-                        <td><img src="img/products/f2.jpg" alt=""></td>
-                        <td>Футболка “Cartoon Astronaut”</td>
-                        <td>1980,02 грн</td>
-                        <td>
-                            <label>
-                                <input type="number" value="1">
-                            </label>
-                        </td>
-                        <td>1980,02 грн</td>
-                    </tr>
-                    <tr>
-                        <td><a href=""><i class="far fa-times-circle"></i></a></td>
-                        <td><img src="img/products/f3.jpg" alt=""></td>
-                        <td>Футболка “Cartoon Astronaut”</td>
-                        <td>1980,02 грн</td>
-                        <td>
-                            <label>
-                                <input type="number" value="1">
-                            </label>
-                        </td>
-                        <td>1980,02 грн</td>
-                    </tr>
-                </tbody>
+                <tbody id="cart-table-body"></tbody>
             </table>
         </section>
 
@@ -115,16 +78,12 @@
                 <h3>Загальна ціна кошика</h3>
                 <table>
                     <tr>
-                        <td>Загальна ціна за товар</td>
-                        <td>5940.06 грн</td>
-                    </tr>
-                    <tr>
                         <td>Доставка</td>
                         <td>Безкоштовно</td>
                     </tr>
                     <tr>
                         <td><strong>Сума до сплати</strong></td>
-                        <td><strong>5940.06 грн</strong></td>
+                        <td id="cart-total"><strong>0 грн</strong></td>
                     </tr>
                 </table>
                 <button class="normal">Купити</button>
@@ -174,5 +133,6 @@
     </footer>
 
     <script src="scripts/index.js"></script>
+    <script src="scripts/cart.js"></script>
 </body>
 </html>

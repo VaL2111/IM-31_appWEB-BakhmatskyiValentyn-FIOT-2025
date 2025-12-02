@@ -30,6 +30,16 @@
   border-radius: 4px;
   color: #fff;
   font-weight: 600;
+  margin-right: 8px;
+  transition: 0.3s;
+}
+
+#pagination a:hover {
+  background-color: #0a9d92;
+}
+
+#pagination .active {
+  background-color: #0a9d92;
 }
 
 /*# sourceMappingURL=shop_style.css.map */
